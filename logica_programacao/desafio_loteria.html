@@ -1,0 +1,43 @@
+<meta charset="UTF-8">
+<center>
+<h1>Sorteio</h1>
+	<p>
+	<h4>Digite um número, você tem direito de fazer 6 lançamentos.</h4>	
+	<input type="submit" value="Realizar Lances" onclick="numLancados();" id="adiciona" />
+	</p>
+<center>
+<script>
+//Setando elementos html
+//var caixaComNumero = document.getElementById("numlance");
+var botao = document.getElementById("adiciona");
+
+//função que monta o array de números do sorteio
+var numSorteados = function(){
+	var sorteados = [];
+	for(var i = 0; i < 6 ; i++){
+		numero = Math.floor(Math.random() * 60 + 1);//verificar intervalo
+		sorteados.push(numero);
+	}
+	console.log("Valores da Loteria: " + sorteados);
+}
+
+var numeroSorteados = numSorteados();
+
+//Solicitar os números de lance para o usuário
+var numLancados = function(){
+	var lancesJogador = [];
+	for(i = 0; i < 6; i++){
+		var numlancado = prompt("Informe o seu " + i + "°" + " lançamento");
+
+		if(numlancado == ""){
+			alert("Você precisa informar um valor para ser lançado. Tente novamente ! ")
+			i--;
+		}else{
+			lancesJogador.push(numlancado);	
+		}
+	}	
+	alert("Números lançados por você :" + lancesJogador);
+}
+</script>
+
+

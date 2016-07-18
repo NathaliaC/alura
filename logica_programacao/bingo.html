@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<input type="text" id="numero"  />
+<input type="submit" value="Adicionar e verifique no bingo" id="verificar"/>
+
+<script>
+ 
+ var sorteados = [];	
+
+ var adicionarSorteado = function(){
+
+ 	var numero = document.getElementById("numero").value;
+
+ 	for(var i = 0; i < sorteados.length; i++){
+ 		if(sorteados[i] == numero){
+ 			alert("Número Já Sorteado! ");
+ 			return; //O "return" diz ao javascript para ele parar de executar essa função. 
+ 		}
+ 	}
+
+ 	//Inserir número dentro do Array
+ 	sorteados.push(numero);
+
+ 	//Exibir o array no console
+ 	console.log(sorteados);
+ }
+
+ var botao = document.getElementById("verificar");
+
+ botao.onclick = adicionarSorteado;
+
+</script>

@@ -1,0 +1,84 @@
+#A
+<a> : Utilizado quando se quer criar um link para algum elementos ou página web.
+
+#B
+<body> : Utilizado para representar o corpo principal do código html.
+<br> : Utilizado quando é necessário a quebra de linha.
+
+#C
+<container> :
+
+#D
+<div> :
+
+#E
+<em> :
+
+#F
+<figure>
+<footer>
+
+#G
+
+#H
+<html> : Utilizado ao abrir e fechar um documento do tipo html.
+<head> :
+<h1>,<h2>,<h3>,<h4>,<h5> : Representa os títulos principais de uma página HTML, quanto menor o número maior o tamanho do título.
+
+<header> : Utilizado para representar a área do site responsável pelo cabeçalho da página.
+
+#I
+<img src="" alt="">: Utilizado para exibir uma imagem na página html.
+
+#J
+
+#K
+
+#L
+<link rel""> : Utilizado para setar um documento externo ao arquivo html, como quando eu quero informar a localização do meu arquivo CSS. 
+
+<li>: Representa uma linha no meu código html.
+
+#M
+<main>
+
+#N
+
+#O
+<ol>
+
+#P
+<p> : Representa um parágrafo na página html.
+
+#Q
+
+#R
+
+#S
+<section>
+<small> 
+
+<span>: A nível de HTML ele não possui nenhum impacto, porém ele é utilizado quando eu desejo aplicar um estilo diferente a algum texto dentro de um parágrafo. 
+
+<strong>
+
+#T
+<title> : Utilizado para representar o título da minha página HTML. 
+
+#U
+<ul> : Representa uma coluna na minha página html.
+
+#V
+
+#X
+
+#Z
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,255 @@
+header{
+    position: relative;
+}
+.banner-contato{
+    width: 14em; /*Largura do banner*/
+    line-height: 1; /* espaçamento da linha*/
+    padding: 1em 0; /* espaçamento entre o texto e a caixa*/
+    box-sizing: border-box;  /* dimensionamento usando uma caixa com borda*/
+
+    text-align: center; /* texto alinhado no centro*/
+    text-decoration: none; /* texto normal */
+    background-color: #3C1D3D; /* cor do fundo*/  
+    color: white; /* cor da fonte*/
+    border: .25em solid black; /* cor, espessura e tamanho da borda*/
+
+    font-size: 1em; /* tamanho da fonte*/
+    font-family: "Open Sans Condensed", sans-serif; /* tipo de fonte*/
+
+    position: absolute; /* posição absoluta ?*/
+    top: 0; /* ficar alinhado no topo da página*/
+    right: 0; /* no lado direito*/
+    transform-origin: 0 0; /**/
+    transform: translate(6.5765em, -2.4745em) rotate(45deg); /*calculo trigonométrico*/
+}
+.subtitulo-principal{
+    font-size: 13px;
+    text-align: center;
+}
+.subtitulo-principal ul{
+    position: absolute;
+}
+
+.foto-home {
+    height: 200px; /*Altura da foto*/
+    border-radius: 100%
+}
+.saudacao p {
+    font-size: 1.5em;
+    color: #99A; /* cor do texto do parágrafo*/
+    line-height: 1; /*espaçamento entrelinhas*/
+    padding: 2em;
+    margin: auto;
+    width: 795px;
+}
+.saudacao-inicio {
+    font-size: 3em;
+    color: #889; /* Cor do texto do início da saudação*/
+}
+.saudacao-ultima-linha {
+    text-align: right; /* texto alinhado a direita*/
+    display: block; /* Defini o elemento como um elemento de bloco*/
+}
+
+.saudacao-ultima-linha em{
+    display: inline-block;
+    color: #851944;
+    font-size: 4em;
+    transform: skew(-10deg)
+        rotate(-5deg)
+}
+
+.saudacao strong {
+    color: #000; /* Aplica uma cor na tag strong da classe saudacao*/
+    font-size: 1.5em;
+    font-family: "Open Sans Condensed", sans-serif;   
+}
+.saudacao em {
+    font-size: 3em;
+    color: #851944; /* Aplica uma cor no texto da tag <em>, um texto itálico e colorido*/
+}
+.botao-index {
+    font-size: 1.0em;
+    background-color: #851944; /* Defini uma cor para o botão*/
+    color: #FFF;  /* Defini uma cor para o texto do botão*/
+    border: .2em solid black; /* Defini uma cor para a borda do botão*/
+    width: 40ch; /* Defini uma largura para o botão*/
+    display: block; /* Defini o botão como um elemento do tipo bloco*/
+    text-align: center; /* Alinhar o texto do botão no centro*/
+    margin: 2em auto;
+    display: block;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    
+}
+.secao-inicio{
+    padding: 2em;
+}
+.secao-inicio h2 {
+    font-size: 3em;
+    margin-bottom: .5em;
+    text-transform: uppercase; /* Coloca todos os textos com <h2> existentes dentro da classe secao-inicio com a letra maiúscula*/
+    text-shadow: 2px 2px #000;   
+}
+.trabalhos {
+    background-color: #3C1D3D; /* Aplica uma cor de fundo para a seção de trabalhos*/
+    border-top: .5em solid #000; /* Aplica na borda superior uma estrutura sólida com a espessura de 10px na cor preta*/
+    border-bottom: .5em solid #000;  /* Aplica na borda inferior uma estrutura sólida com a espessura de 10px na cor preta*/
+}
+.trabalhos h2 {
+    color: #FFF; /* Aplica uma cor para o texto contido em todas as tags h2 da classe trabalhos*/
+}
+.trabalhos ul {
+    overflow: hidden; /* Caso o tamanho do conteúdo transborte dentro da minha seção de trabalho, esse conteúdo será ocultado*/
+    border: 0.5em solid black;  /* Será aplicado uma border a todas colunas existentes dentro da seção trabalhos*/
+}
+.trabalhos li {
+    float: left; /* Todas as linhas existentes dentro da seção trabalhos estarão alinhadas a esquerda*/
+    width: 33.333%; /* Todas as linhas existentes dentro da seção possuiram uma largura de 33.333%*/
+}
+.trabalhos img {
+    width: 100%; /* Todas as imagens existentes dentro da seção trabalhos possuiram largura de 100%*/
+    display: block; /* Todas as imagens existentes dentro da seção serão identificadas como blocos*/
+}
+.blog {
+    background-color: #999; /* Aplicar uma cord de fundo para a seção blog*/
+    color: #FFF; /* Aplicar uma cor ao texto da seção blog*/
+    border-bottom: 13em solid #851944; /* Aplicar a borda inferior da seção blog uma borda solida com espessura de 10px com a cor #851944*/
+    position: relative;
+ 
+}
+.blog small{
+    position: relative;
+    top: -2em;
+}
+.blog li a {
+    color: #FCF; /* Aplicar as linhas e links existentes dentro da classe blog uma cor*/
+    padding: .5em;
+    display: block;
+
+}
+.inicio-post{
+    background-color: #FFF;
+    color: #000;
+    position: absolute;
+    top: 3em;
+    right: 3em;
+    height: 6em;
+    padding: 1em;
+}
+footer {
+    background-color: #000; /* Aplicar uma cor de fundo ao cabeçalho da página*/
+    color: #FFF; /* Aplicar uma cor ao texto do cabeçalho da página*/
+    padding: 2em;
+}
+footer h2{
+    font-size: 3em;
+}
+
+footer a {
+    color: #F99; /* Aplicar uma cor aos links existente dentro do cabeçalho da página*/
+}
+main {
+    width: 100%; /*Definir uma largura de 100% para o conteúdo existente dentro da <main>, ou seja, o conteúdo principal da página*/
+    padding-bottom: 0; /* Aplicar a borda inferior uma margem 0*/
+    float: none; /*Utilizado para não deixar o conteúdo principal flutuar*/ 
+}
+
+.palavra-home{
+    font-family: "Shadows Into Light", cursive;
+    font-weight: bold;
+    color: #D5447E;
+    font-size: 15px;
+    perspective: 6px;
+    position: absolute;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    height: 100%;
+}
+.eficiencia{
+    top: 50%;
+    right: 60%;
+    transform: translate(-50%, -50%) rotate(-5deg) translateZ(4px);
+}
+.boas-praticas{
+    top: 70%;
+    left: 20%; 
+    transform: translate(-50%, -50%) rotate(-5deg) translateZ(4px);
+}
+.codigo-limpo{
+    top: 45%;
+    right: 25%;
+    transform: translate(-50%, -50%) rotate(-5deg) translateZ(4px);
+}
+.css3{
+    top: 55%;
+    left: 35%;
+    transform: translate(-50%, -50%) rotate(-5deg) translateZ(4px);
+    
+}
+.html5{
+    top: 30%;
+    right: 65%;
+    transform: translate(-50%, -50%) rotate(-5deg) translateZ(4px);
+}
+.javascript{
+    top: 15%;
+    left: 60%;
+    transform: translate(-50%, -50%) rotate(-5deg) translateZ(4px);
+    
+}
+.acessibilidade{
+    top: 30%;
+    right: 35%;
+    transform: translate(-50%, -50%) rotate(-5deg) translateZ(4px);
+    
+}
+.responsivo{
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%) rotate(-5deg) translateZ(4px);
+}
+.otimizacoes{
+    top: 70%;
+    right: 65%;
+    transform: translate(-50%, -50%) rotate(-5deg) translateZ(4px);
+}
+.agilidade{
+    top: 75%;
+    left: 35%;
+    transform: translate(-50%, -50%) rotate(-5deg) translateZ(4px);
+}
+.design{
+    top: 40%;
+    right: 60%;    
+    transform: translate(-50%, -50%) rotate(-5deg) translateZ(4px);
+}
+
+.blog .inicio-post {
+  position: absolute;
+  top: 4em;
+  height: 8em;
+  left: 30%;
+  right: 4em;
+  background-color: #F2FFFC;
+  color: #000;
+  padding: 1.5em;
+
+}
+.blog .mais-recente{
+    background-color: #F2FFFC;
+}
+
+.blog .mais-recente a{
+    color: #F26;
+}
+.blog li{
+    width: 30%; 
+}
+
+.mundo{
+    background-color: #FFFFFF";
+}
+
+

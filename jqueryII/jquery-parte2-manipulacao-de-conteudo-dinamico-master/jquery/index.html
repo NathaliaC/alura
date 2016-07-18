@@ -1,0 +1,102 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="carrinho.css">
+</head>
+<body>
+	<div class="carrinho">
+		<h2>Carrinho entrega em Sao Paulo</h2>
+		<table>
+			<thead>
+				<tr>
+					<td></td>
+					<td>Nome</td>
+					<td>Quantidade</td>
+					<td>Valor</td>
+					<td>Total</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><img src="imagens/tablet.jpg"></td>
+					<td>Tablet miPad 18</td>
+					<td>1</td>
+					<td>499.99</td>
+					<td class="item-total">499.99</td>
+					<td><a class="remove-item" href="">(remover)</a></td>
+				</tr>
+				<tr>
+					<td><img src="imagens/telefone.png"></td>
+					<td>Telefone miPhone 18</td>
+					<td>2</td>
+					<td>199.99</td>
+					<td class="item-total">399.98</td>
+				</tr>
+				<tr>
+					<td><img src="imagens/sapato.jpg"></td>
+					<td>Sapato</td>
+					<td>1</td>
+					<td>99.99</td>
+					<td class="item-total">99.99</td>
+				</tr>
+				<tr>
+					<td><img src="imagens/monitor.jpg"></td>
+					<td>Monitor Sam 21</td>
+					<td>1</td>
+					<td>299.00</td>
+					<td class="item-total">299.00</td>
+				</tr>
+				<tr>
+					<td><img src="imagens/teclado.jpg"></td>
+					<td>Teclado com fio preto </td>
+					<td>1</td>
+					<td>100.00</td>
+					<td class="item-total">100.00</td>
+				</tr>
+				<tr>
+					<td><img src="imagens/mouse.jpg"></td>
+					<td>Mouse wireless</td>
+					<td>1</td>
+					<td>199.00</td>
+					<td class="item-total">199.00</td>
+				</tr>
+				<tr>
+					<td><img src="imagens/camiseta.jpg"></td>
+					<td>Camiseta G</td>	
+					<td>1</td>
+					<td>25.00</td>
+					<td class="item-total">25.00</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>	
+
+	<div>
+		<b>Total de Itens: R$<span id="valor-total">0</span></div></b>
+		<br/>
+		<b>Quantidade de Itens: <span id="quantidade-de-itens">0</span></b>	
+	</div>
+
+	<script src="jquery-2.2.2.min.js"></script>
+
+	<script>
+	var aposinicializado = function(){
+		var items = $(".item-total"); 
+		var total = 0;
+
+		for(var i = 0; i<items.length; i++ ){
+			var item= $(items[i]).text(); //pega o item atual do array
+			var preco = parseFloat(item); //pegar o valor do texto da td e trasformar em número. 
+			total = total + preco;
+		}
+
+		//Setando o valor no elemento
+		$("#valor-total").text(total);
+		$("#quantidade-de-itens").text(items.length	
+	};
+	$(aposinicializado);
+	</script>
+
+
+
+</body>
+</html>
